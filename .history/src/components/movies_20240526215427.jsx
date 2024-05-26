@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 export default function MoviesComponent() {
   const link =
-    "https://i.pinimg.com/564x/6c/51/0d/6c510dee10ff52e9659f5872de36026b.jpg";
+    "https://images-cdn.ubuy.co.in/63ef0a397f1d781bea0a2464-star-wars-rogue-one-movie-poster.jpg";
   const dispatch = useDispatch();
   const movies = useSelector((state) => state.movies.moviesList);
   let isLoading = useSelector((state) => state.movies.isLoading);

@@ -13,8 +13,7 @@ import { FaHeart, FaRegHeart } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 export default function MoviesComponent() {
-  const link =
-    "https://i.pinimg.com/564x/6c/51/0d/6c510dee10ff52e9659f5872de36026b.jpg";
+  const link = process.env.DUMMY_API_URL.toString();
   const dispatch = useDispatch();
   const movies = useSelector((state) => state.movies.moviesList);
   let isLoading = useSelector((state) => state.movies.isLoading);

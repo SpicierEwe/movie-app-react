@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function FavouritesComponent() {
   const link =
-    "https://i.pinimg.com/564x/6c/51/0d/6c510dee10ff52e9659f5872de36026b.jpg";
+    "https://dx35vtwkllhj9.cloudfront.net/universalstudios/migration/images/regions/us/updates/onesheet.jpg;
 
   const dispatch = useDispatch();
 

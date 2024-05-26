@@ -11,7 +11,7 @@ import { FcLike } from "react-icons/fc";
 
 import { FaHeart, FaRegHeart } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import MovieModel from "./models/movies_model";
+import MovieModel from "./widgets/movies_model";
 
 export default function MoviesComponent() {
   const dispatch = useDispatch();

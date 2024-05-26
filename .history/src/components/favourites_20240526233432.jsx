@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 import { IoMdRemoveCircle } from "react-icons/io";
 import { FcLike } from "react-icons/fc";
 import { Link } from "react-router-dom";
-import MovieModel from "./models/movies_model";
+import MovieModel from "./widgets/movies_model";
 
 export default function FavouritesComponent() {
   const link =

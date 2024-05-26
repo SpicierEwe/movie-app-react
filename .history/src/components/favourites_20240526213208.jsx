@@ -32,7 +32,7 @@ export default function FavouritesComponent() {
   }, [favouritesIdList, movies]);
 
   //   if favourite movies are not empty, then display them
-  if (favouritesIdList.length > 0)
+  if (favouritesMoviesList.length > 0)
     return (
       <div>
         {

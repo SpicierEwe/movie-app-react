@@ -32,7 +32,7 @@ export default function MoviesComponent() {
   return (
     <div>
       {!isLoading && (
-        <div className="ml-auto mr-auto mt-12 mb-24 pt-16 grid  sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4  px-16 xl:px-0 gap-12 max-w-screen-xl">
+        <div className="ml-auto mr-auto mt-12 mb-24 pt-16 grid  sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 px-16 xl:px-0 gap-12 max-w-screen-xl">
           {movies.map((movie, index) => (
             <div
               key={index}

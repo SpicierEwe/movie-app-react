@@ -12,7 +12,8 @@ export default function MovieModel({ movie, isFavourite }) {
   return (
     <div
       key={movie.index}
-      className="group max-w-fit m-auto border-2 border-gray-900 bg-[#202124]  rounded-xl overflow-hidden hover:-translate-y-1 transform transition duration-500 ease-in-out "
+      className="group w-auto border-2 border-red-900 bg-[#202124] rounded-xl overflow-hidden hover:-translate-y-1
+  transform transition duration-500 ease-in-out"
     >
       <Link
         to={movie.imdb_url}

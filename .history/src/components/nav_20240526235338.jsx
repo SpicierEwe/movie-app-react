@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { MdOutlinePersonalVideo, MdPerson } from "react-icons/md";
+import { MdOutlinePersonalVideo } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 
 import { FaRegHeart } from "react-icons/fa6";
@@ -18,26 +18,12 @@ export default function NavComponent(props) {
         <h1 class="text-4xl text-center font-bold mt-10">Stratex Movie App</h1>
       </div>
       <div class="flex gap-5 justify-evenly items-center m-auto mt-16 overflow-hidden w-fit">
-        {button2(
-          "",
-          () => {
-            window.open("https://github.com/SpicierEwe/movie-app-react");
-          },
-          isAllMoviesRoute,
-          <FaGithub size={size} />
-        )}
-        {button2(
-          "",
-          () => {
-            window.open("https://hammadtayyab.vercel.app/");
-          },
-          isFavouritesRoute,
-          <MdPerson size={size} />
-        )}
+        {button2("", () => {}, isAllMoviesRoute, <FaGithub size={size} />)}
+        {button2("", () => {}, isFavouritesRoute, <FaRegHeart size={size} />)}
       </div>
 
       {/* ======================= */}
-      <div class="flex justify-evenly items-center m-auto mt-16 overflow-hidden w-max bg-gray-500 rounded-full">
+      <div class="flex gap-5 justify-evenly items-center m-auto mt-16 overflow-hidden w-max bg-gray-500 rounded-full">
         {button(
           "All Movies",
           () => navigate("/"),
@@ -73,8 +59,8 @@ function button(text, onClick, isSelected = false, icon) {
 function button2(text, onClick, isSelected = false, icon) {
   return (
     <button
-      class={`p-2 rounded-full  flex items-center gap-5 justify-center bg-gray-50 font-semibold
-      text-lg text-black hover:bg-pink-600 hover:text-white transition-all duration-300 ease-in-out`}
+      class={`p-1 rounded-full text-white flex items-center gap-5 justify-center bg-gray font-semibold
+      text-lg`}
       onClick={onClick}
     >
       {icon}

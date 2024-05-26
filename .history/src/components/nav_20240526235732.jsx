@@ -18,22 +18,8 @@ export default function NavComponent(props) {
         <h1 class="text-4xl text-center font-bold mt-10">Stratex Movie App</h1>
       </div>
       <div class="flex gap-5 justify-evenly items-center m-auto mt-16 overflow-hidden w-fit">
-        {button2(
-          "",
-          () => {
-            window.open("https://github.com/SpicierEwe/movie-app-react");
-          },
-          isAllMoviesRoute,
-          <FaGithub size={size} />
-        )}
-        {button2(
-          "",
-          () => {
-            window.open("https://hammadtayyab.vercel.app/");
-          },
-          isFavouritesRoute,
-          <MdPerson size={size} />
-        )}
+        {button2("", () => {}, isAllMoviesRoute, <FaGithub size={size} />)}
+        {button2("", () => {}, isFavouritesRoute, <MdPerson size={size} />)}
       </div>
 
       {/* ======================= */}
@@ -61,7 +47,7 @@ function button(text, onClick, isSelected = false, icon) {
     <button
       class={`px-7 py-2 text-white flex items-center gap-5 justify-center ${
         isSelected ? "bg-pink-600 font-semibold" : ""
-      } text-lg`}
+      } text-lg transition-all duration-200 ease-in-out hover:bg-pink-50 hover:text-white`}
       onClick={onClick}
     >
       {icon}

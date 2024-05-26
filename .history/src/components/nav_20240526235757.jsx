@@ -18,22 +18,8 @@ export default function NavComponent(props) {
         <h1 class="text-4xl text-center font-bold mt-10">Stratex Movie App</h1>
       </div>
       <div class="flex gap-5 justify-evenly items-center m-auto mt-16 overflow-hidden w-fit">
-        {button2(
-          "",
-          () => {
-            window.open("https://github.com/SpicierEwe/movie-app-react");
-          },
-          isAllMoviesRoute,
-          <FaGithub size={size} />
-        )}
-        {button2(
-          "",
-          () => {
-            window.open("https://hammadtayyab.vercel.app/");
-          },
-          isFavouritesRoute,
-          <MdPerson size={size} />
-        )}
+        {button2("", () => {}, isAllMoviesRoute, <FaGithub size={size} />)}
+        {button2("", () => {}, isFavouritesRoute, <MdPerson size={size} />)}
       </div>
 
       {/* ======================= */}

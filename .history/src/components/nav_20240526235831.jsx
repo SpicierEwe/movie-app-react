@@ -21,19 +21,12 @@ export default function NavComponent(props) {
         {button2(
           "",
           () => {
-            window.open("https://github.com/SpicierEwe/movie-app-react");
+            window.open("https://hammadtayyab.vercel.app/");
           },
           isAllMoviesRoute,
           <FaGithub size={size} />
         )}
-        {button2(
-          "",
-          () => {
-            window.open("https://hammadtayyab.vercel.app/");
-          },
-          isFavouritesRoute,
-          <MdPerson size={size} />
-        )}
+        {button2("", () => {}, isFavouritesRoute, <MdPerson size={size} />)}
       </div>
 
       {/* ======================= */}

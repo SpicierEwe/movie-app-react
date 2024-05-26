@@ -11,7 +11,7 @@ import { FcLike } from "react-icons/fc";
 
 import { FaHeart, FaRegHeart } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import MovieModel from "./widgets/movies_model";
+import Movies_model from "./widgets/movies_model";
 
 export default function MoviesComponent() {
   const dispatch = useDispatch();
@@ -34,7 +34,10 @@ export default function MoviesComponent() {
       {!isLoading && (
         <div className="ml-auto mr-auto mt-12 mb-24 pt-16 grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4  px-9 md:px-16 xl:px-0 gap-12 max-w-screen-xl">
           {movies.map((movie, index) => (
-            <MovieModel movie={movie} isFavourite={checkFavourite(movie.id)} />
+            <Movies_model
+              movie={movie}
+              isFavourite={checkFavourite(movie.id)}
+            />
           ))}
         </div>
       )}

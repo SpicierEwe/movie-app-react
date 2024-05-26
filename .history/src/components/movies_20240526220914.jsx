@@ -26,7 +26,7 @@ export default function MoviesComponent() {
   };
 
   useEffect(() => {
-    document.title = "All Movies";
+    document.title = "Favourites";
     dispatch(fetchMovies());
   }, [dispatch]);
 

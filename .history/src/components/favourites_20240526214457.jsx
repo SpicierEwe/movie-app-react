@@ -49,12 +49,15 @@ export default function FavouritesComponent() {
                   className="block relative w-full rounded-xl"
                 >
                   <img src={link} alt="movie" className="object-cover" />
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#202124] bg-opacity-70 text-white p-5">
+                    <p className="text-lg">{movie.movie}</p>
+                  </div>
                 </Link>
                 <div className="absolute top-5 right-5 flex items-center flex-col gap-y-5">
-                  <div className="flex justify-center items-center relative">
+                  <div className="flex justify-center items-center pt-1 relative">
                     <FaStar
                       size={70}
-                      className="relative text-yellow-400 rounded-full"
+                      className="relative text-yellow-400 rounded-full p-1"
                     />
                     <h1 className="absolute text-xl font-bold self-center z-20 sm:pt-2 pt-1 text-black">
                       {movie.rating.toFixed(1)}
@@ -71,7 +74,6 @@ export default function FavouritesComponent() {
                     <IoMdRemoveCircle size={25} className="text-red-500" />
                   </div>
                 </div>
-                <p className="text-md text-[#e8eaed] p-5">{movie.movie}</p>
               </div>
             ))}
           </div>

@@ -37,7 +37,7 @@ export default function FavouritesComponent() {
       <div>
         {
           <div className="ml-auto mr-auto mt-12 mb-24 pt-16 grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4  px-9 md:px-16 xl:px-0 gap-12 max-w-screen-xl">
-            {favouritesMoviesList.map((movie, index) => (
+            {movies.map((movie, index) => (
               <div
                 key={index}
                 className="group border-2 border-gray-900 bg-[#202124] rounded-xl overflow-hidden hover:-translate-y-1
@@ -68,7 +68,7 @@ export default function FavouritesComponent() {
                       dispatch(updateFovourites(movie.id));
                     }}
                   >
-                    <IoMdRemoveCircle size={25} className="text-red-500" />
+                    <IoMdRemoveCircle className="text-red-500" />
                   </div>
                 </div>
                 <p className="text-md text-[#e8eaed] p-5">{movie.movie}</p>

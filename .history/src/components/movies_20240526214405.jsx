@@ -52,7 +52,7 @@ export default function MoviesComponent() {
                     size={70}
                     className="relative text-yellow-400 rounded-full"
                   />
-                  <h1 className="absolute text-xl font-bold self-center z-20 sm:pt-2 pt-1 text-black">
+                  <h1 className="absolute text-xl font-bold self-center z-20 pt-2 text-black">
                     {movie.rating.toFixed(1)}
                   </h1>
                 </div>

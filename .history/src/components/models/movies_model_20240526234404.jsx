@@ -23,7 +23,6 @@ export default function MovieModel({ movie, isFavourite }) {
       </Link>
       <div className="absolute top-5 right-5 flex items-center flex-col gap-y-5">
         <div className="flex justify-center items-center relative">
-          {/* imdb ratings display */}
           <FaStar size={70} className="relative text-yellow-400 rounded-full" />
           <h1 className="absolute text-xl font-bold self-center z-20 sm:pt-2 pt-1 text-black">
             {movie.rating.toFixed(1)}
@@ -37,7 +36,6 @@ export default function MovieModel({ movie, isFavourite }) {
             dispatch(updateFovourites(movie.id));
           }}
         >
-          {/* Hightlight if isFavourite else dont */}
           {isFavourite ? (
             <FaHeart size={23} className="text-red-500" />
           ) : (
